@@ -5,7 +5,7 @@ compile:
 	python3 setup.py install
 
 test:
-	python3 tests.py
+	python3 -m pytest tests/
 
 compile_and_test: compile
 	make test
